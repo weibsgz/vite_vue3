@@ -45,4 +45,11 @@ export default [
             user: true
         }
     },
+
+    /**测试使用  右键菜单 */
+    {
+        path:'/contextMenu',
+        name:'contextMenu',
+        component:()=>import('@/views/testPage/contextMenu.vue')
+    }
 ]

@@ -48,7 +48,8 @@
 //   import steps from './steps'
   import { onMounted } from 'vue'
   import { FEEDBACK_URL } from '@/constans/index.js'
-  
+  import { useRouter } from 'vue-router'
+
    /**
     * 引导页处理
     */
@@ -133,8 +134,11 @@
 //   /**
 //    * 反馈处理
 //    */
+
+const router = useRouter()
   const onToFeedback = () => {
-    window.open(FEEDBACK_URL, '_blank')
+    // window.open(FEEDBACK_URL, '_blank')
+    router.push('/contextMenu')
   }
   </script>
   

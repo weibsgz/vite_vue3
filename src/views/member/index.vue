@@ -52,7 +52,7 @@
     
 
     const endTime = computed(()=>{
-        const date = new Date('2023-11-09T18:00:00');
+        const date = new Date('2023-12-19T18:00:00');
         const currentDate = Date.now()
         const timestamp = date.getTime() - currentDate;
         return timestamp
